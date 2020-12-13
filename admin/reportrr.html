@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin | Reports</title>
+
+    <link rel="shortcut icon" href="../images/TravelLogoBlackv2icon.png">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/admin_dash.css">
+	<link rel="stylesheet" href="../css/report.css">
+
+</head>
+
+<body>
+
+<div class="side_panel" id="side">
+        <div class="nav_toggle">
+            <i id="nav_toggle" class="fa fa-bars" onClick="toggleSidebar();"></i>
+        </div>
+
+
+        <div class="btn">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <p>keerthi_r</p>
+            <a href="#" class="myButton logout">Log Out</a>      
+	   </div>
+	   
+	   
+	   <div class="btn">
+            <i class="center" aria-hidden="true"></i>
+           
+            <a href="#" class="myButton logout">Log Out</a>      
+	   </div>
+
+        
+
+<div class="center-menu">
+  <a href="#" class="active">H</a></div>
+</div>
+  
+<!-- Load Font Awesome Icon Library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- Buttons to choose list or grid view -->
+<button onclick="listView()"><i class="fa fa-bars"></i> List</button>
+<button onclick="gridView()"><i class="fa fa-th-large"></i> Grid</button>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>Column 1</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>Column 2</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#ccc;">
+    <h2>Column 3</h2>
+    <p>Some text..</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Column 4</h2>
+    <p>Some text..</p>
+  </div>
+</div>
+      <p class="btn">
+        <script src="../js/jquery-3.2.1.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+        function toggleSidebar() {
+            document.getElementById("side").classList.toggle('active');
+
+            document.getElementById("content").classList.toggle('blur');
+        }
+      </script>
+      </p>
+</body>
+
+</html>
