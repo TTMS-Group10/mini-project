@@ -1,0 +1,103 @@
+.manage {
+    width: 55%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+
+
+.add_pack {
+    border-radius: 5px;
+    background-color: rgba(7, 42, 78, 0.72);
+    color: white;
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 50px;
+
+}
+
+input[type=text],
+input[type=number],
+input[type=file],
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 100px;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit] {
+    background-color: #072a4e;
+    color: white;
+    padding: 12px 20px;
+    border: 2px solid #072a4e;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type=submit]:hover {
+    background-color: rgba(7, 42, 78, 0.72);
+    border: 2px solid #072a4e;
+}
+
+
+
+.col-20 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+}
+
+.col-80 {
+    float: left;
+    width: 80%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+
+@media (max-width: 600px) {
+    .col-20,
+    .col-80,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .manage {
+        width: 80%;
+    }
+
+    .add_pack {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+    }
+}

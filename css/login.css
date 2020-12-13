@@ -1,0 +1,263 @@
+body {
+
+    font-family: sans-serif;
+    background-image: url(../images/travel_skyline_detail.jpg);
+    background-size: auto;
+    min-height: 100vh;
+
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    outline: none;
+}
+
+html {
+    overflow-y: scroll;
+}
+
+.form_container {
+    min-height: 80.5vh;
+
+}
+
+
+.form a {
+    text-decoration: none;
+    color: #1ab188;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+
+}
+
+.form a:hover {
+    color: #179b77;
+}
+
+.form {
+    background: #072a4e;
+    padding: 20px;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+}
+
+.form-head {
+    padding: 0;
+    margin: 0 -20px 10px -20px;
+}
+
+.form-head:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.form-head h1 {
+    display: block;
+    padding: 8px;
+    /*15, 10*/
+    background: rgba(26, 177, 136, 0.14);
+    color: #ffffff;
+    font-size: 18px;
+    /* 20*/
+    width: 100%;
+    text-align: center;
+}
+
+
+.form h1 {
+    text-align: center;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300; //    margin: 0 0 40px;    
+    margin-bottom: 15px;
+    /*20*/
+}
+
+.form p.error {
+    color: #eada1c;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: -25px;
+
+}
+
+.form label {
+    position: absolute;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+    -webkit-backface-visibility: hidden;
+    pointer-events: none;
+    font-size: 15px;
+    /*22, 20*/
+}
+
+.form label .req {
+    margin: 2px;
+    color: #1ab188;
+}
+
+.form label.active {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    left: 2px;
+    font-size: 14px;
+    top: -15px;
+
+}
+
+.form label.active .req {
+    opacity: 0;
+}
+
+.form label.highlight {
+    color: #ffffff;
+}
+
+.form input,
+.form textarea {
+    font-size: 15px;
+    /*22, 20*/
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 5px 5px;
+    background: none;
+    background-image: none;
+    border: 1px solid #a0b3b0;
+    color: #ffffff;
+    border-radius: 0;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+}
+
+.form input:focus,
+.form textarea:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+.form textarea {
+    border: 2px solid #a0b3b0;
+    resize: vertical;
+}
+
+.field-wrap {
+    position: relative;
+    margin-bottom: 40px;
+}
+
+
+
+form .button {
+    border: 1px solid #072a4e;
+    outline: none;
+    border-radius: 10px;
+    /*0*/
+    padding: 5px 0;
+    font-size: 1.2rem;
+    /*2*/
+    font-weight: //600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    word-spacing: .1em;
+    background: #1ab188;
+    color: #ffffff;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-appearance: none;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+form .logbtn {
+    margin-top: 20px;
+}
+
+.form .button:hover,
+.form .button:focus {
+    background: #072a4e;
+    border: 1px solid #138868;
+}
+
+.button-block {
+    display: block;
+    width: 100%;
+}
+
+.forgot {
+    margin-top: -20px;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.form-foot {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.form-foot p {
+    color: white;
+
+}
+
+.form-foot a {
+    margin-left: 5px;
+    display: block;
+    margin-top: 8px;
+
+}
+
+.combo select {
+    width: 100%;
+    left: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    background-color: transparent;
+    padding: 5px;
+    -webkit-transition: border-color .25s ease, box-shadow .25s ease;
+    transition: border-color .25s ease, box-shadow .25s ease;
+    margin-bottom: 10px;
+
+}
+
+select:focus {
+    outline: 0;
+    border-color: #1ab188;
+}
+
+
+.AccountType option {
+    background: #072a4e;
+
+}
+
+
+.footer {
+    clear: both;
+
+}
+
+
+/*For Smaller screens*/
+
+@media (max-width: 768px) {
+    .form {
+        padding: 5%;
+        max-width: 90%;
+        margin: 20px auto;
+
+    }
+}
