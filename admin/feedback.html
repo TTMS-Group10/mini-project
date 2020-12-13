@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Admin | Feedbacks</title>
+
+    <link rel="shortcut icon" href="images/partemlogo.png">
+
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/admin_dash.css">
+
+</head>
+
+<body>
+
+    <div class="side_panel" id="side">
+        <div class="nav_toggle">
+            <i id="nav_toggle" class="fa fa-bars" onClick="toggleSidebar();"></i>
+        </div>
+
+
+        <div class="side_top">
+            <i class="fa fa-user-circle" aria-hidden="true"></i>
+            <p>naveen_s</p>
+            <a href="#" class="myButton logout">Log Out</a>
+        </div>
+
+        <div class="side_menu">
+            <ul>
+                <li><a href="index.html"><i class="fa fa-tachometer"></i></i>Dashboard</a></li>
+                <li><a href="manage_user.html"><i class="fa fa-users" aria-hidden="true"></i>Manage Users</a></li>
+                <li><a href="manage_agent.html"><i class="fa fa-users" aria-hidden="true"></i>Manage Agents</a></li>
+                <li><a href="report.html"><i class="fa fa-area-chart" aria-hidden="true"></i>Report</a></li>
+                <li><a href="feedback.html"><i class="fa fa-comments-o" aria-hidden="true"></i>Feedback</a></li>
+            </ul>
+
+
+        </div>
+
+
+
+    </div>
+
+    <div class="content" id="content">
+
+
+
+
+    </div>
+
+
+
+    <script src="../js/jquery-3.2.1.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+
+
+    <script>
+        function toggleSidebar() {
+            document.getElementById("side").classList.toggle('active');
+
+            document.getElementById("content").classList.toggle('blur');
+        }
+    </script>
+</body>
+
+</html>
